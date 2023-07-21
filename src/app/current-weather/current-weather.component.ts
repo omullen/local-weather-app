@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ICurrentWeather } from '../icurrent-weather';
+import { WeatherService } from '../weather.service';
 
 @Component({
   selector: 'app-current-weather',
@@ -17,6 +18,7 @@ export class CurrentWeatherComponent {
       temperature: 0,
       description: '',
     }
+    this.weatherService.getCurrentWeather('Cork', 'Ireland').subscribe(data => this.current = data)
   }
 
 }
