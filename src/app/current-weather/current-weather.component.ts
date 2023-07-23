@@ -18,7 +18,7 @@ export class CurrentWeatherComponent {
       temperature: 0,
       description: '',
     }
-    this.weatherService.getCurrentWeather('Cork', 'Ireland').subscribe(data => this.current = data)
+    this.weatherService.getCurrentWeather('Mooreland', 'United States').subscribe(data => this.current = data)
   }
 
 }
