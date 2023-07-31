@@ -9,7 +9,7 @@ import { WeatherService } from './weather.service';
 })
 export class AppComponent {
   title = 'local-weather-app';
-  currentWeather: ICurrentWeather {
+  currentWeather: ICurrentWeather = {
     city: '',
     country: '',
     date: new Date(),
